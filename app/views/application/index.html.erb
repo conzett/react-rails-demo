@@ -1,0 +1,4 @@
+<%- json = render template: 'employees/employees.json.jbuilder' %>
+<div class="container">
+  <%= react_component 'Employees', json, { prerender: true } %>
+</div>
